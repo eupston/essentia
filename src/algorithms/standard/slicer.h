@@ -74,8 +74,8 @@ class Slicer : public Algorithm {
 } // namespace essentia
 
 #include "algorithm.h"
-#include "vectoroutput.h"
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
+#include <essentia/streaming/algorithms/vectorinput.h>
 #include "network.h"
 
 namespace essentia {

@@ -20,7 +20,7 @@
 #include "rhythmdescriptors.h"
 #include "algorithmfactory.h"
 #include "network.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 using namespace std;
 

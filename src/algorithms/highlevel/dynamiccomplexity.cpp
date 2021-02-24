@@ -142,7 +142,7 @@ void DynamicComplexity::filter(vector<Real>& result, const vector<Real>& input) 
 } // namespace standard
 } // namespace essentia
 
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 #include "algorithmfactory.h"
 
 namespace essentia {

@@ -20,8 +20,8 @@
 #include "lowlevelspectralextractor.h"
 #include "algorithmfactory.h"
 #include "essentiamath.h"
-#include "poolstorage.h"
-#include "copy.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
+#include <essentia/streaming/algorithms/copy.h>
 
 using namespace std;
 using namespace essentia;

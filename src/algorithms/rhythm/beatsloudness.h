@@ -68,7 +68,7 @@ class BeatsLoudness : public AlgorithmComposite {
 } // namespace streaming
 } // namespace essentia
 
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
 #include "network.h"
 #include "algorithm.h"
 #include "pool.h"

@@ -21,7 +21,7 @@
 #include "rhythmextractor2013.h"
 #include "tnt/tnt.h"
 #include "essentiamath.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 #include "algorithmfactory.h"
 
 using namespace std;

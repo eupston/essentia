@@ -21,7 +21,7 @@
 #define ESSENTIA_SPLINE_H
 
 #include "algorithm.h"
-#include "splineutil.h"
+#include <3rdparty/spline/splineutil.h>
 
 namespace essentia {
 namespace standard {

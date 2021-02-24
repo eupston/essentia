@@ -77,7 +77,7 @@ class BeatTrackerDegara : public AlgorithmComposite {
 } // namespace streaming
 } // namespace essentia
 
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
 
 namespace essentia {
 namespace standard {

@@ -67,7 +67,7 @@ class EasyLoader : public AlgorithmComposite {
 } // namespace essentia
 
 
-#include "vectoroutput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
 #include "algorithm.h"
 
 namespace essentia {

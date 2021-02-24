@@ -7,7 +7,7 @@
 
 using namespace std;
 
-# include "splineutil.h"
+# include <3rdparty/spline/splineutil.h>
 
 //****************************************************************************80
 

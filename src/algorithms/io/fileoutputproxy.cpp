@@ -18,7 +18,7 @@
  */
 
 #include "fileoutputproxy.h"
-#include "fileoutput.h"
+#include <essentia/streaming/algorithms/fileoutput.h>
 #include <complex>
 #include "tnt/tnt.h"
 #include "streamutil.h"

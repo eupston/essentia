@@ -24,8 +24,8 @@
 #include "pool.h"
 #include "algorithm.h"
 #include "network.h"
-#include "vectorinput.h"
-#include "vectoroutput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
+#include <essentia/streaming/algorithms/vectoroutput.h>
 
 
 namespace essentia {

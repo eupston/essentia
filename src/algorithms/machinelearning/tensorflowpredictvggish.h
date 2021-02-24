@@ -78,9 +78,9 @@ class TensorflowPredictVGGish : public AlgorithmComposite {
 } // namespace streaming
 } // namespace essentia
 
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
 #include "pool.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 namespace essentia {
 namespace standard {

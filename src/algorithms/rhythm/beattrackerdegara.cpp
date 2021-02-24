@@ -18,7 +18,7 @@
  */
 
 #include "beattrackerdegara.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 #include "algorithmfactory.h"
 
 using namespace std;

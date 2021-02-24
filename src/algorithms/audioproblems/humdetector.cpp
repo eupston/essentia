@@ -20,7 +20,7 @@
 #include "humdetector.h"
 #include <algorithm> // sort
 #include "essentiamath.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 using namespace std;
 

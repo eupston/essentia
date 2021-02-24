@@ -20,8 +20,8 @@
 #include "extractor.h"
 #include "algorithmfactory.h"
 #include "essentiamath.h"
-#include "poolstorage.h"
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
+#include <essentia/streaming/algorithms/vectorinput.h>
 #include "network.h"
 
 using namespace std;

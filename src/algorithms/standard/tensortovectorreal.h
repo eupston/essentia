@@ -22,7 +22,7 @@
 
 // #include "streamingalgorithmcomposite.h"
 #include "streamingalgorithm.h"
-#include "vectoroutput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
 
 namespace essentia {
 namespace streaming {

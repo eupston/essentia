@@ -123,7 +123,7 @@ class HumDetector : public AlgorithmComposite {
 } // namespace essentia
 
 
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
 
 namespace essentia {
 namespace standard {

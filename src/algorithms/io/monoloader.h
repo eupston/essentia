@@ -74,7 +74,7 @@ class MonoLoader : public AlgorithmComposite {
 } // namespace streaming
 } // namespace essentia
 
-#include "vectoroutput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
 #include "network.h"
 #include "algorithm.h"
 

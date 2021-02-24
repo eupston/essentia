@@ -169,7 +169,7 @@ OnsetRate::~OnsetRate() {
 } // namespace standard
 } // namespace essentia
 
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 namespace essentia {
 namespace streaming {

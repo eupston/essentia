@@ -103,7 +103,7 @@ void RhythmTransform::compute() {
 } // namespace standard
 } // namespace streaming
 
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 namespace essentia {
 namespace streaming {

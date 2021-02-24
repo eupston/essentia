@@ -19,7 +19,7 @@
 
 #include <complex>
 #include "percivalbpmestimator.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 #include "algorithmfactory.h"
 #include "essentiamath.h"
 

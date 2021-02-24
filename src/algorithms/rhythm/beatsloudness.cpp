@@ -90,7 +90,7 @@ void BeatsLoudness::configure() {
 
 
 #include "network.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 namespace essentia {
 namespace standard {

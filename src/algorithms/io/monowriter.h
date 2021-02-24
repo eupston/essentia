@@ -59,7 +59,7 @@ class MonoWriter : public Algorithm {
 } // namespace essentia
 
 #include "algorithm.h"
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
 #include "network.h"
 
 namespace essentia {

@@ -60,7 +60,7 @@ class AudioWriter : public Algorithm {
 
 #include "network.h"
 #include "algorithm.h"
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
 
 namespace essentia {
 namespace standard {

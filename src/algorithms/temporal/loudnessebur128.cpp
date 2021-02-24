@@ -23,7 +23,7 @@
 
 using namespace std;
 
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 namespace essentia {
 namespace streaming {

@@ -19,7 +19,7 @@
 
 #include "lowlevelspectraleqloudextractor.h"
 #include "algorithmfactory.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 using namespace std;
 

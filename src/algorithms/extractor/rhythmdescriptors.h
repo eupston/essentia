@@ -23,7 +23,7 @@
 #include "streamingalgorithmcomposite.h"
 #include "algorithm.h"
 #include "pool.h"
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectorinput.h>
 #include "network.h"
 
 namespace essentia {

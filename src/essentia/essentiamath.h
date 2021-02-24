@@ -27,6 +27,7 @@
 #include <math.h>
 #include <cmath>
 #include <vector>
+#include <array>
 #include <numeric>
 #include <limits>
 #include <functional>

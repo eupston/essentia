@@ -612,7 +612,7 @@ void Key::addMinorTriad(int root, Real contribution, vector<Real>& M_chords) con
 } // namespace standard
 } // namespace essentia
 
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 #include "algorithmfactory.h"
 
 namespace essentia {

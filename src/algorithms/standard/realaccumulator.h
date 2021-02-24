@@ -21,7 +21,7 @@
 #define ESSENTIA_REALACCUMULATOR_H
 
 #include "streamingalgorithmcomposite.h"
-#include "vectoroutput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
 
 namespace essentia {
 namespace streaming {

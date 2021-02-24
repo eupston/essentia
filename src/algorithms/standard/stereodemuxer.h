@@ -64,8 +64,8 @@ class StereoDemuxer : public Algorithm {
 
 #include "algorithm.h"
 #include "network.h"
-#include "vectoroutput.h"
-#include "vectorinput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
+#include <essentia/streaming/algorithms/vectorinput.h>
 
 namespace essentia {
 namespace standard {

@@ -23,7 +23,7 @@
 #include "streamingalgorithm.h"
 #include "network.h"
 #include "ffmpegapi.h"
-#include "poolstorage.h"
+#include <essentia/streaming/algorithms/poolstorage.h>
 
 
 #define MAX_AUDIO_FRAME_SIZE 192000
@@ -129,7 +129,7 @@ class AudioLoader : public Algorithm {
 } // namespace essentia
 
 
-#include "vectoroutput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
 #include "algorithm.h"
 
 namespace essentia {

@@ -71,7 +71,7 @@ class EqloudLoader : public AlgorithmComposite {
 } // namespace essentia
 
 
-#include "vectoroutput.h"
+#include <essentia/streaming/algorithms/vectoroutput.h>
 #include "network.h"
 #include "algorithm.h"
 
