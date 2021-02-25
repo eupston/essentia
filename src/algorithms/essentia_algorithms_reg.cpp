@@ -98,9 +98,11 @@
 #include "algorithms/tonal/vibrato.h"
 #include "algorithms/standard/replaygain.h"
 #include "algorithms/tonal/pitchsaliencefunction.h"
+#include "algorithms/standard/fftkcomplex.h"
 #include "algorithms/standard/realaccumulator.h"
 #include "algorithms/rhythm/beattrackerdegara.h"
 #include "algorithms/spectral/gfcc.h"
+#include "algorithms/standard/ifftk.h"
 #include "algorithms/tonal/pitchyinprobabilities.h"
 #include "algorithms/synthesis/sinemodelanal.h"
 #include "algorithms/stats/energy.h"
@@ -127,6 +129,7 @@
 #include "algorithms/temporal/duration.h"
 #include "algorithms/rhythm/beatsloudness.h"
 #include "algorithms/tonal/multipitchmelodia.h"
+#include "algorithms/standard/ifftkcomplex.h"
 #include "algorithms/highlevel/coversongsimilarity.h"
 #include "algorithms/spectral/spectralcomplexity.h"
 #include "algorithms/standard/scale.h"
@@ -168,6 +171,7 @@
 #include "algorithms/rhythm/superfluxextractor.h"
 #include "algorithms/spectral/tensorflowinputmusicnn.h"
 #include "algorithms/synthesis/sprmodelanal.h"
+#include "algorithms/standard/fftk.h"
 #include "algorithms/tonal/pitchcontours.h"
 #include "algorithms/synthesis/harmonicmodelanal.h"
 #include "algorithms/stats/decrease.h"
@@ -338,8 +342,10 @@ ESSENTIA_API void registerAlgorithm() {
     AlgorithmFactory::Registrar<Vibrato> regVibrato;
     AlgorithmFactory::Registrar<ReplayGain> regReplayGain;
     AlgorithmFactory::Registrar<PitchSalienceFunction> regPitchSalienceFunction;
+    AlgorithmFactory::Registrar<FFTKComplex> regFFTKComplex;
     AlgorithmFactory::Registrar<BeatTrackerDegara> regBeatTrackerDegara;
     AlgorithmFactory::Registrar<GFCC> regGFCC;
+    AlgorithmFactory::Registrar<IFFTK> regIFFTK;
     AlgorithmFactory::Registrar<PitchYinProbabilities> regPitchYinProbabilities;
     AlgorithmFactory::Registrar<SineModelAnal> regSineModelAnal;
     AlgorithmFactory::Registrar<Energy> regEnergy;
@@ -366,6 +372,7 @@ ESSENTIA_API void registerAlgorithm() {
     AlgorithmFactory::Registrar<Duration> regDuration;
     AlgorithmFactory::Registrar<BeatsLoudness> regBeatsLoudness;
     AlgorithmFactory::Registrar<MultiPitchMelodia> regMultiPitchMelodia;
+    AlgorithmFactory::Registrar<IFFTKComplex> regIFFTKComplex;
     AlgorithmFactory::Registrar<CoverSongSimilarity> regCoverSongSimilarity;
     AlgorithmFactory::Registrar<SpectralComplexity> regSpectralComplexity;
     AlgorithmFactory::Registrar<Scale> regScale;
@@ -406,6 +413,7 @@ ESSENTIA_API void registerAlgorithm() {
     AlgorithmFactory::Registrar<SuperFluxExtractor> regSuperFluxExtractor;
     AlgorithmFactory::Registrar<TensorflowInputMusiCNN> regTensorflowInputMusiCNN;
     AlgorithmFactory::Registrar<SprModelAnal> regSprModelAnal;
+    AlgorithmFactory::Registrar<FFTK> regFFTK;
     AlgorithmFactory::Registrar<PitchContours> regPitchContours;
     AlgorithmFactory::Registrar<HarmonicModelAnal> regHarmonicModelAnal;
     AlgorithmFactory::Registrar<Decrease> regDecrease;
@@ -577,9 +585,11 @@ ESSENTIA_API void registerAlgorithm() {
     AlgorithmFactory::Registrar<Vibrato, essentia::standard::Vibrato> regVibrato;
     AlgorithmFactory::Registrar<ReplayGain, essentia::standard::ReplayGain> regReplayGain;
     AlgorithmFactory::Registrar<PitchSalienceFunction, essentia::standard::PitchSalienceFunction> regPitchSalienceFunction;
+    AlgorithmFactory::Registrar<FFTKComplex, essentia::standard::FFTKComplex> regFFTKComplex;
     AlgorithmFactory::Registrar<RealAccumulator> regRealAccumulator;
     AlgorithmFactory::Registrar<BeatTrackerDegara, essentia::standard::BeatTrackerDegara> regBeatTrackerDegara;
     AlgorithmFactory::Registrar<GFCC, essentia::standard::GFCC> regGFCC;
+    AlgorithmFactory::Registrar<IFFTK, essentia::standard::IFFTK> regIFFTK;
     AlgorithmFactory::Registrar<PitchYinProbabilities, essentia::standard::PitchYinProbabilities> regPitchYinProbabilities;
     AlgorithmFactory::Registrar<SineModelAnal, essentia::standard::SineModelAnal> regSineModelAnal;
     AlgorithmFactory::Registrar<Energy, essentia::standard::Energy> regEnergy;
@@ -605,6 +615,7 @@ ESSENTIA_API void registerAlgorithm() {
     AlgorithmFactory::Registrar<Duration, essentia::standard::Duration> regDuration;
     AlgorithmFactory::Registrar<BeatsLoudness, essentia::standard::BeatsLoudness> regBeatsLoudness;
     AlgorithmFactory::Registrar<MultiPitchMelodia, essentia::standard::MultiPitchMelodia> regMultiPitchMelodia;
+    AlgorithmFactory::Registrar<IFFTKComplex, essentia::standard::IFFTKComplex> regIFFTKComplex;
     AlgorithmFactory::Registrar<CoverSongSimilarity, essentia::standard::CoverSongSimilarity> regCoverSongSimilarity;
     AlgorithmFactory::Registrar<SpectralComplexity, essentia::standard::SpectralComplexity> regSpectralComplexity;
     AlgorithmFactory::Registrar<Scale, essentia::standard::Scale> regScale;
@@ -643,6 +654,7 @@ ESSENTIA_API void registerAlgorithm() {
     AlgorithmFactory::Registrar<SuperFluxExtractor, essentia::standard::SuperFluxExtractor> regSuperFluxExtractor;
     AlgorithmFactory::Registrar<TensorflowInputMusiCNN, essentia::standard::TensorflowInputMusiCNN> regTensorflowInputMusiCNN;
     AlgorithmFactory::Registrar<SprModelAnal, essentia::standard::SprModelAnal> regSprModelAnal;
+    AlgorithmFactory::Registrar<FFTK, essentia::standard::FFTK> regFFTK;
     AlgorithmFactory::Registrar<PitchContours, essentia::standard::PitchContours> regPitchContours;
     AlgorithmFactory::Registrar<HarmonicModelAnal, essentia::standard::HarmonicModelAnal> regHarmonicModelAnal;
     AlgorithmFactory::Registrar<Decrease, essentia::standard::Decrease> regDecrease;

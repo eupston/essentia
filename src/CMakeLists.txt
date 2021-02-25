@@ -122,6 +122,12 @@ CPMAddPackage(
 #        GITHUB_REPOSITORY FFTW/fftw3
 #        GIT_TAG origin/master)
 
+#https://github.com/mborgerding/kissfft
+CPMAddPackage(
+        NAME KISS
+        GITHUB_REPOSITORY mborgerding/kissfft
+        GIT_TAG origin/master)
+
 add_library(${PROJECT_NAME} ${ESSENTIA_SRC})
 
 target_include_directories(${PROJECT_NAME} PUBLIC
@@ -140,4 +146,5 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 target_link_libraries(${PROJECT_NAME}
         Eigen3::Eigen
         samplerate
+        kissfft
 )

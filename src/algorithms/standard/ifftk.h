@@ -23,7 +23,7 @@
 #include "algorithm.h"
 #include "threading.h"
 #include <complex>
-#include "tools/kiss_fftr.h"
+#include <3rdparty/kiss_fft130/tools/kiss_fftr.h>
 
 namespace essentia {
 namespace standard {
