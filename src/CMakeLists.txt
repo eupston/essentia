@@ -105,9 +105,13 @@ if(SNR)
             )
 endif()
 
-#TODO get this dynamically from the web
-find_package(Eigen3 REQUIRED)
+# https://gitlab.com/libeigen/eigen
 add_definitions(-DEIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS)
+add_definitions(-DEIGEN_MPL2_ONLY)
+CPMAddPackage(
+        NAME EIGEN3
+        GITLAB_REPOSITORY libeigen/eigen
+        GIT_TAG origin/master)
 
 # https://github.com/libsndfile/libsamplerate
 CPMAddPackage(
@@ -140,7 +144,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC
         ${CMAKE_CURRENT_LIST_DIR}/essentia/utils/extractor_music
         ${CMAKE_CURRENT_LIST_DIR}/essentia/utils/tnt
         ${CMAKE_CURRENT_LIST_DIR}/algorithms
-
     )
 
 target_link_libraries(${PROJECT_NAME}
