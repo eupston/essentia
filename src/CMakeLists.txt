@@ -127,8 +127,8 @@ CPMAddPackage(
 #        GIT_TAG origin/master)
 
 #https://github.com/mborgerding/kissfft
-add_definitions(-DKISSFFT_TEST=OFF)
-add_definitions(-DKISSFFT_TOOLS=OFF)
+set(KISSFFT_TEST OFF CACHE BOOL "" FORCE)
+set(KISSFFT_TOOLS OFF CACHE BOOL "" FORCE)
 CPMAddPackage(
         NAME KISS
         GITHUB_REPOSITORY mborgerding/kissfft
