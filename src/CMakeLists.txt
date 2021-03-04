@@ -129,6 +129,7 @@ CPMAddPackage(
 #https://github.com/mborgerding/kissfft
 set(KISSFFT_TEST OFF CACHE BOOL "" FORCE)
 set(KISSFFT_TOOLS OFF CACHE BOOL "" FORCE)
+set(KISSFFT_STATIC ON CACHE BOOL "" FORCE)
 CPMAddPackage(
         NAME KISS
         GITHUB_REPOSITORY mborgerding/kissfft
